@@ -1,0 +1,189 @@
+* {
+    box-sizing: border-box;
+}
+html {
+  
+    font-family: 'Merriweather', serif;
+}
+form {
+   line-height: 18px; 
+   margin-left:10px;
+   margin-right:10px;
+}
+.style:focus
+ {background-color:rgb(255, 255, 255);
+    transition: background-color 1s ease-in;
+}
+h1 {
+    background-color:rgb(44, 44, 44);
+    text-align: center;
+    font-size: 14px;
+    padding:20px 40px;
+    margin-top:0;
+    color:white;
+   
+}
+body{
+    
+    margin:0;
+    font-size:12px;
+}
+header {
+   position:relative;
+   font-size:12px;
+   border-bottom: 2px solid #000;
+   margin-right:10px;
+   margin-left:10px;
+}
+header:before {
+    content:"";
+    display:inline-block;
+    position:absolute;
+   
+    bottom:4px;
+    width:100%;
+    height:3px;
+    background: #000;
+}
+h2 {
+    color: rgb(63, 62, 62);
+    font-size:14px;
+   text-align:center;
+}
+
+p { 
+    text-align:center;
+    margin:10px;
+    padding-top:0;
+    padding-bottom:20px;
+    color:gray;
+}
+legend {
+    
+    color:rgb(80, 79, 79);
+    text-align: left;
+}
+
+.style {
+    display:flex;
+    flex-direction: column;
+    border-style: none;
+    background-color: rgb(215, 229, 233);
+    border-radius: 4px;
+    padding:10px 20px;
+    color:rgb(148, 145, 145);
+    width:100%;
+}
+#zipcode {
+    width: 50%;
+    
+}
+
+input[type="text"],[type="email"],[type="tel"]::placeholder {
+    text-align:right;
+                
+}
+input[id="zipcode"]::placeholder{
+   text-align:left; 
+}
+ input::placeholder {
+     color:rgb(202, 202, 202);
+ }
+ 
+.newsletter {
+    border-top:solid 1px black;
+    padding-top:20px;
+    margin-bottom:10px;
+    width:100%;
+}
+
+footer{
+    text-align: center;
+    color:gray;
+}
+fieldset {
+    border:none;
+    background-color:rgb(243, 236, 236);
+    margin-top:10px;
+   
+}
+
+input[type="checkbox"]:checked + label {
+    font-weight:bold;
+    
+}
+
+textarea {
+    width:100%;
+    height:100%;
+   margin-top:10px;
+   margin-bottom:10px;
+   padding:30px 30px;
+   border-style: none;
+   background-color: rgb(215, 229, 233);
+
+}
+textarea:focus {
+    background-color:white;
+    transition: background-color 1s ease-in;
+}
+textarea::placeholder {
+    color: rgb(202, 202, 202);
+}
+label {
+    color:rgb(131, 130, 130);
+    display:flexbox;
+    
+}
+fieldset:nth-of-type(1) label {
+    display: flexbox;
+  }
+button {
+    cursor:pointer;
+    width:100%;
+    display:flexbox;
+    border-style: none;
+    border-radius:4px;
+    background-color: rgb(92, 177, 172);
+    color:white;
+    padding-top:10px;
+    padding-bottom:10px;
+    font-size: 18px;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+button:hover {
+    opacity: .75;
+}
+
+@media only screen and (min-width: 768px)
+{
+    body {
+        margin-left:0;
+        margin-right:0;
+    }
+form {
+    max-width:500px;
+    margin:auto;
+}
+fieldset:nth-of-type(1) label {
+   width:30%;
+   display: flexbox;
+   flex-wrap: wrap;
+  }
+  fieldset:nth-of-type(1) input, select[id="state"]
+   {  
+   width:65%;
+   
+  }
+header {
+    width:500px;
+    margin:auto;
+  }
+
+  #zipcode {
+    width: 25%;
+}
+  
+
+  }
